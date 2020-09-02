@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Exo2.0";
+  src: url(../fonts/Exo2.0-Thin.otf);
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(../img/pattern.jpg);
+  background-size: 7vmax;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.background-gradient {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.5) 80%
+  );
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+.headline {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 12.8vmax;
+  max-height: 14.7vh;
+  font-family: "Exo2.0";
+  font-size: 1.4vmax;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 2.8vmax;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 29.6vmax;
+  padding-top: 0;
+  padding-bottom: 4vmax;
+  user-select: none;
+}
+
+.treat-fakeborder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #1698d9;
+  height: 37.5vmax;
+  width: 25vmax;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+}
+
+.treat {
+  position: relative;
+  background-image: url(../img/funbox_logo.png);
+  background-position: 50% 175%;
+  background-size: 115%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-color: white;
+  height: 36.875vmax;
+  width: 24.375vmax;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.comment {
+  color: white;
+}
+
+.circle {
+  position: absolute;
+  background-color: #1698d9;
+  height: 1vmax;
+  width: 1vmax;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  margin: 0.7vmax;
+  width: 6.25vmax;
+  height: 6.25vmax;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* шрифты товара */
+
+.description_top {
+  color: #666666;
+  font-family: "Trebuchet MS";
+  font-size: 1.2vmax;
+  margin-left: 3.5vmax;
+  margin-top: 1.5vmax;
+  margin-bottom: 0;
+}
+
+.description_middle {
+  font-family: "Trebuchet MS";
+  font-size: 3.7vmax;
+  margin-left: 3.5vmax;
+  margin-top: 0.5vmax;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.description_middle_little {
+  font-family: "Trebuchet MS";
+  margin-left: 3.5vmax;
+  margin-top: 0;
+  margin-bottom: 1vmax;
+}
+
+.description_bottom {
+  color: #666666;
+  font-family: "Trebuchet MS";
+  font-size: 1.1vmax;
+  margin-left: 3.5vmax;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.weight_number {
+  position: relative;
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: 3vmax;
+  margin: 0;
+}
+
+.weight_measure {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: 2vmax;
+  margin: 0;
+}
+
+.comment {
+  font-family: "Trebuchet MS";
+  font-size: 1vmax;
+}
+
+.comment span {
+  border-bottom: 1px #1698d9 dashed;
+  cursor: pointer;
+  color: #1698d9;
+}
+
+/* стили для эффектов */
+
+.disabled_block {
+  background-color: #b3b3b3;
+}
+.disabled_text {
+  color: #b3b3b3;
+}
+.disabled_image {
+  filter: grayscale(0.5);
+}
+.disabled_comment {
+  color: #d2d253;
+}
+
+.checked_block {
+  background-color: #d91667;
+}
+
+@media (orientation: portrait) {
+  body {
+    background-size: 10vmax;
+  }
+}
